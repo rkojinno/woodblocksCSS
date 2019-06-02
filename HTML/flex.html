@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>WoodBlocks CSS [ Flex ]</title>
+
+
+	<link rel="stylesheet" type="text/css" href="../SCSS/base.css">
+	<link rel="stylesheet" type="text/css" href="../SCSS/fancyPants.css">
+</head>
+
+<body class="fp_body">
+    <h1>Flex</h1>
+	<!-- <header>
+		<nav>
+			<ul>
+				<li>Your menu</li>
+			</ul>
+		</nav>
+	</header> -->
+
+<section>
+        <h1 class="fp_title">
+				Flex
+            </h1>
+        <h3 class="flex fp_description">
+                   <span> A simple div with the class 'flex'.  Meaning the content will divide in section automatically.</span>
+                   <span class="fp_comment">  Unlike 'inline' blocks they will remain side by side even on mobile</span>
+        </h3>
+        <div class="flex fp_bordered_box">
+            <div class="flex-block fp_bg_red fp_content_box">
+                    Block 1
+            </div>
+            <div class="flex-block fp_bg_green fp_content_box">
+                    Block 2<br>
+            </div>
+            <div class="flex-block fp_bg_blue fp_content_box">
+                    Block 3
+            </div>
+        </div>
+
+        <!--  ............................   -->
+
+        <h1 class="fp_title">
+				Aliign
+            </h1>
+        <h3 class="flex fp_description">
+                   <span>If you add the class 'flex-center" you will be able to align the content in the middle regardless of size. You can also use "flex-end" or "flex-start" to align it at the sart or end of the div.</span>
+        </h3>
+        <div class="flex flex-center fp_bordered_box">
+            <div class="flex-block fp_bg_red fp_content_box">
+                    Block 1
+            </div>
+            <div class="flex-block fp_bg_green fp_content_box">
+                    Block 2<br>hsuhdsudh<br>uahuhauhushu<br>uahuhaus
+            </div>
+            <div class="flex-block fp_bg_blue fp_content_box">
+                    Block 3
+            </div>
+        </div>
+
+         <!--  ............................   -->
+
+         <h1 class="fp_title">
+				Fill
+            </h1>
+        <h3 class="flex fp_description">
+                   Usually the  'Divs' inside the flex content have a property of flex-grow:1, tha enables them to be divided equally inside the container.
+                   you can, however, make a div bigger by the use of "flex_g[X]" ([X] should be replaced by a number between 2 to 5)<br> on a smaller screen the difference between divs will be reduced
+        </h3>
+        <div class="flex flex-center fp_bordered_box">
+            <div class="flex-block fp_bg_red fp_content_box flex_g4">
+                    Block 1
+            </div>
+            <div class="flex-block fp_bg_green fp_content_box">
+                    Block 2<br>hsuhdsudh<br>uahuhauhushu<br>uahuhaus
+            </div>
+            <div class="flex-block fp_bg_blue fp_content_box flex_g3">
+                    Block 3
+            </div>
+        </div>
+
+         <!--  ............................   -->
+
+
+         <h1 class="fp_title">
+				Fill percentage and multiline
+            </h1>
+        <h3 class="flex fp_description">
+              Sometime, however, one may wish set the div sizes and for them to break in multilines. To do so one must use the class "flex-multiline" with an addition of 
+              classes such as "size2" or "size3" for the content divs to set their size.
+        </h3>
+        <div class="flex-multiline flex-center fp_bordered_box">
+            <div class="flex-block fp_bg_red fp_content_box size3">
+                    Block 1
+            </div>
+            <div class="flex-block fp_bg_blue fp_content_box size3">
+                    Block 3
+            </div>
+            <div class="flex-block fp_bg_red fp_content_box size3">
+                    Block 1
+            </div>
+            <div class="flex-block fp_bg_blue fp_content_box size2">
+                    Block 3
+            </div>
+            <div class="flex-block fp_bg_red fp_content_box size3">
+                    Block 1
+            </div>
+      
+        </div>
+
+     
+  
+
+				
+</section>
+
+
+<!-- ............................................................................................................................................ -->
+<section>
+        <h1 class="fp_title">
+				Flex Column
+            </h1>
+        <h3 class="flex-column fp_description">
+                   <span> A simple div with the class 'flex-column'.  Meaning the content will divide in section automatically.</span>
+                   <span class="">  Unlike simple flex , the content will pile one on the top of the other.</span>
+        </h3>
+        <div class="flex-column fp_bordered_box">
+            <div class="flex-block fp_bg_red fp_content_box" >
+                    Block 1
+            </div>
+            <div class="flex-block fp_bg_green fp_content_box">
+                    Block 2
+            </div>
+            <div class="flex-block fp_bg_blue fp_content_box">
+                    Block 3
+            </div>
+        </div>
+  
+
+				
+</section>
+
+
+<!-- ............................................................................................................................................ -->
+<section>
+        <h1 class="fp_title">
+				Reverse
+            </h1>
+        <h3 class="flex-column fp_description">
+                   If you add the class "reverse_r" or "reverse_c", you can make it so the div will switch its ordering. Specially usefull when adding a mobile-block class
+        </h3>
+        <div class="flex-column fp_bordered_box reverse_c">
+            <div class="flex-block fp_bg_red fp_content_box" >
+                    Block 1
+            </div>
+            <div class="flex-block fp_bg_green fp_content_box">
+                    Block 2
+            </div>
+            <div class="flex-block fp_bg_blue fp_content_box">
+                    Block 3
+            </div>
+        </div>
+  
+
+				
+</section>
+
+<!-- ............................................................................................................................................ -->
+<section>
+        <h1 class="fp_title">
+				Mobile Block
+            </h1>
+        <h3 class="flex-column fp_description">
+                  Sometimes you wish for your divs to change property when on mobile, one of this examples is to switch their display from flex to block.
+                 to do so one should use the class "mobile_block"
+        </h3>
+        <div class="flex fp_bordered_box mobile_block">
+            <div class="flex-block fp_bg_red fp_content_box" >
+                    Block 1
+            </div>
+            <div class="flex-block fp_bg_green fp_content_box">
+                    Block 2
+            </div>
+            <div class="flex-block fp_bg_blue fp_content_box">
+                    Block 3
+            </div>
+        </div>
+  
+
+				
+</section>
+
+
+
+	
+</body>
+
+</html>

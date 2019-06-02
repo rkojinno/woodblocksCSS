@@ -1,0 +1,101 @@
+// this exists for  your personal tweeks and components and is not part of the general structure.
+//FN1 - Imports
+//FN2 - Colors
+//FN3 - Body and Boxes
+//FN4 - Texts
+
+
+//FN1 - Imports
+//..........................................................................................................
+//..........................................................................................................
+
+@import 'variables';
+@import 'variablesSizes';
+
+
+
+//FN2 - Colors
+//..........................................................................................................
+//..........................................................................................................
+
+.fp_bg_red{
+    background-color: $red;
+}
+.fp_bg_red2{
+    background-color: $red2;
+}
+.fp_bg_green{
+    background-color:$green;
+}
+.fp_bg_blue{
+    background-color: $blue;
+}
+.fp_bg_blue2{
+    background-color: $blue2;
+}
+.fp_bg_greyLight{
+    background-color: $greyLight;
+}
+.fp_bg_pinkLight{
+    background-color: $pinkLight;
+}
+
+
+
+//FN3 - Body and Boxes
+//..........................................................................................................
+//..........................................................................................................
+
+.fp_body{
+    width: 1900px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: arial;
+}
+
+.fp_bordered_box{
+    border: 1px #f5f0f0 solid;
+    padding: 34px;
+    border-radius: 6px;
+    max-width: 98%;
+    margin: 20px auto 0;
+    box-shadow: 1px 1px 6px #efefef;
+}
+.fp_content_box{
+    padding: 10px;
+    box-shadow: inset 1px 1px 2px rgba(90, 90, 90, 0.19);
+}
+
+
+
+//FN4 - Texts
+//..........................................................................................................
+//..........................................................................................................
+.fp_title{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    max-width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    color: $greyDark;
+    text-transform: uppercase;
+}
+.h2,h3{
+    color:$grey;
+}
+.fp_description{
+    max-width: 98%;
+    margin:auto;
+}
+.fp_comment{
+    background-color: #eda932;
+    margin: 0;
+    max-width: 98%;
+    margin:auto;
+    margin-top: -3px;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    font-size: 14px;
+}
+

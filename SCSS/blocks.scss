@@ -1,0 +1,33 @@
+@import 'variablesSizes';
+
+.block{
+    display: block;
+}
+.inline{
+    display: inline-block;
+}
+.whitespace_fix{
+    .inline{
+        margin-left: -3px;
+        margin-right: -3px;
+    }
+}
+
+
+.float_block{
+    float: none;			
+    
+}
+.float_block:after { 
+    content: " "; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
+.inline_float{
+    float: left;
+}
+.reverse_float{
+    float: right;
+}

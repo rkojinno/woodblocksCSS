@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>WoodBlocks CSS [ Blocks ]</title>
+
+
+	<link rel="stylesheet" type="text/css" href="../SCSS/base.css">
+	<link rel="stylesheet" type="text/css" href="../SCSS/fancyPants.css">
+</head>
+
+<body class="fp_body">
+	<h1>Block</h1>
+	<!-- <header>
+		<nav>
+			<ul>
+				<li>Your menu</li>
+			</ul>
+		</nav>
+	</header> -->
+
+
+	<section>
+			<!-- ........................................................................................................ -->
+			<h1 class="fp_title">
+				Block
+			</h1>
+			<h3 class="block fp_description">
+				A simple div with the class 'block'.  Meaning a single block.
+			</h3>
+			<div class="block  fp_bordered_box">
+						<p class="fp_label"> <strong>Example of:</strong> Size 5, in a div 'text_center' to align items in
+							the middle, and text in items set as 'text_left' </p>
+							<div class="block size5 fp_content_box fp_bg_red text_left">
+								<p> Block 1 size 5</p>
+							</div>
+							<div class="block size3 fp_content_box fp_bg_red2 text_left">
+									<p> Block 1 size 3</p>
+							</div>
+							<div class="block fp_content_box fp_bg_red text_left">
+									<p> Block 1 Full size</p>
+							</div>
+
+
+
+							<p class="fp_label"> <strong>Example of:</strong> A block set to the right of its cointaner block, using the class 'is_right', this only works for a single block element inside a block div.</p>
+							<div class="block">
+							
+									<div class="block size5 fp_content_box fp_bg_red text_left is_right">
+										<p> Block 1 size 5</p>
+									</div>
+				
+							</div>
+
+
+				
+					
+				</div>
+				
+				<!-- ........................................................................................................ -->
+
+
+
+
+				
+</section>
+
+
+
+	<!-- .................................................................................................................................................... -->
+	<section>
+				<!-- ........................................................................................................ -->
+				<h1 class="fp_title">
+					Simple Blocks
+				</h1>
+				<h3 class="block fp_description">
+					To align inline-block elements you can make quick use of the 'inline' class tigether with
+					size[amount of blocks per line],
+					here below we have examples of <strong>'size3'</strong> and <strong>'size5'</strong>.
+				</h3>
+				<div class="block  fp_bordered_box">
+					<div class="block whitespace_fix">
+							<p class="fp_label"> <strong>Example of:</strong> Size 3 </p>
+							<div class="inline size3 fp_content_box fp_bg_blue">
+								<p> Block 1</p>
+							</div>
+							<div class="inline size3 fp_content_box fp_bg_blue2">
+								<p> Block 2</p>
+							</div>
+							<div class="inline size3 fp_content_box fp_bg_blue">
+								<p> Block 3</p>
+							</div>
+							<div class="inline size3 fp_content_box fp_bg_blue2">
+								<p> Block 4</p>
+							</div>
+							<div class="inline size3 fp_content_box fp_bg_blue">
+								<p> Block 5</p>
+							</div>
+					</div>
+					
+					<div class="block">
+							<p class="fp_label"> <strong>Example of:</strong> Size 5, in a div 'text_center' to align items in
+								the middle, and text in items set as 'text_left' </p>
+							<div class="text_center">
+								<div class="inline size5 fp_content_box fp_bg_blue text_left">
+									<p> Block 1</p>
+								</div><div class="inline size5 fp_content_box fp_bg_blue2 text_left">
+									<p> Block 2</p>
+								</div><div class="inline size5 fp_content_box fp_bg_blue text_left">
+									<p> Block 1</p>
+								</div><div class="inline size5 fp_content_box fp_bg_blue2 text_left">
+									<p> Block 2</p>
+								</div><div class="inline size5 fp_content_box fp_bg_blue text_left">
+									<p> Block 1</p>
+								</div><div class="inline size5 fp_content_box fp_bg_blue2 text_left">
+									<p> Block 2</p>
+								</div>
+							</div>
+					</div>
+					
+
+
+
+					<div class="block">
+						<p class="fp_label"> <strong>Example of:</strong> Iline divs set to the right with a 'text_right' block. </p>
+						<div class="text_right">
+								<div class="inline size5 fp_content_box fp_bg_blue text_left">
+									<p> Block 1</p>
+								</div><div class="inline size5 fp_content_box fp_bg_blue2 text_left">
+									<p> Block 2</p>
+								</div>
+							</div>
+					</div>
+					<!-- ........................................................................................................ -->
+
+
+
+
+
+				</div>
+				<p class="block fp_comment">
+					ps: to avoid whitespace issue it may be white to connect the ending '>' of a closing tag to the ' < ' of the following inline-block tag.<br>
+					if you don't want to do that... try using the class 'whitespace_fix'.
+				</p>
+					
+	</section>
+	<!-- ................................................................................................................................................. -->
+	<section>
+			<!-- ........................................................................................................ -->
+			<h1 class="fp_title">
+				Float Blocks
+			</h1>
+			<h3 class="block fp_description">
+				A 'inline_float' block works just like a normal block but due to the float property it <strong>MUST</strong> be contained inside a 'float_block' block. 
+			</h3>
+			<div class="block  fp_bordered_box">
+
+				
+				<div class="block">
+						<p class="fp_label"> <strong>Example of:</strong> Size 5, in a div 'text_center' to align items in
+							the middle, and text in items set as 'text_left' </p>
+						<div class="float_block">
+							<div class="size5 inline_float fp_bg_blue2">
+								<p> Block 1</p>
+							</div>
+							<div class="size5 inline_float fp_bg_blue">
+									<p> Block 1</p>
+								</div>
+								<div class="size5 reverse_float fp_bg_blue2">
+										<p> Block 1</p>
+									</div>
+						</div>
+				</div>
+
+				<div class="block">
+					<p class="fp_label"> <strong>Example of:</strong> Using Float blocks to switch the order of elements (it may be wiser to use Flex Blocks if you find yourself in this situation) </p>
+					<div class="float_block">
+						<div class="size5 reverse_float fp_bg_blue2">
+							<p> Block 1</p>
+						</div>
+
+							<div class="size5 inline_float  fp_bg_blue2">
+									<p> Block 3</p>
+								</div>
+					</div>
+			</div>
+				
+				<!-- ........................................................................................................ -->
+
+
+
+
+
+			</div>
+				
+</section>
+
+
+
+	
+</body>
+
+</html>
